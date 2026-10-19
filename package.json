@@ -1,0 +1,13 @@
+{
+  "name": "x4-station-calculator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-isolation=none",
+    "build": "node scripts/build-offline.mjs",
+    "host-check": "node scripts/host-check.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.1"
+  }
+}

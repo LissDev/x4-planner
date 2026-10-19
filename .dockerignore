@@ -1,0 +1,15 @@
+*
+!Dockerfile
+!package.json
+!package-lock.json
+!index.html
+!styles.css
+!station-v2.css
+!data.js
+!ship-data.js
+!src/
+!src/**
+!scripts/
+!scripts/build-offline.mjs
+!vendor/
+!vendor/solver.global.js
