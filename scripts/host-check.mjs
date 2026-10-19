@@ -48,7 +48,7 @@ try {
   await page.getByRole('combobox', { name: 'Добавить конечный товар' }).selectOption({ label: 'Энергоэлементы' });
   await page.getByRole('button', { name: 'Добавить', exact: true }).click();
   await page.locator('#module-picker').click();
-  await page.getByRole('option', { name: 'Производство энергоэлементов · Энергоэлементы', exact: true }).click();
+  await page.locator('#module-suggestions').getByRole('option', { name: 'Производство энергоэлементов · Энергоэлементы', exact: true }).click();
   await page.getByRole('button', { name: '＋ Добавить модуль' }).click();
   assert.match(await page.locator('.metrics').innerText(), /168[\s\u00a0]*000 кр\./, 'Average ware price must produce revenue');
   assert.equal(await page.locator('input[data-count]').first().inputValue(), '1');
